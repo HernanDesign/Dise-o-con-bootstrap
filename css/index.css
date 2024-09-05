@@ -1,0 +1,321 @@
+*{box-sizing: border-box;}
+
+html{
+    --colorPrincipalUno: #0090c1;
+    --colorPrincipalDos: #fb3adf;
+}
+
+body, nav, header, main, #contenedorUno, #contenedorDos, footer{width: 100%;}
+h1, h2, h3, h4, h5, h6{font-size: 24px; margin-top: 0; color: rgba(255, 255, 255, 0.8); text-align: center;}
+h1{font-size: 38px; font-size: 2rem; margin-bottom: 30px;}
+
+body{
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    background-color: #000;
+}
+
+/* Modal */
+.modal-header img{
+    width: 100px;
+    margin-right: 10px;
+}
+
+.texthello{font-weight: bold;}
+#botonLogin{
+    background-color: var(--colorPrincipalUno);
+    width: 100%;
+    height: 40px;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+}
+
+#textFooterModal{
+    width: 100%;
+    text-align: center;
+}
+
+.modal-footer a{text-decoration: none;}
+
+#reg{color: var(--colorPrincipalUno);}
+#olvide{color: var(--colorPrincipalDos);}
+
+.navbar{
+    background-color: #000 !important;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+    position: fixed !important;
+    z-index: 200;
+}
+
+#relleno{width: 100%; height: 60px;}
+
+.navbar .nav-link, .navbar .active{color: rgba(255, 255, 255, 0.5) !important;}
+
+.navbar-nav .nav-item{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+    padding: 10px;
+}
+
+.navbar-nav .nav-item:last-child{margin-bottom: 15px;}
+
+
+/* Menú Hamburguesa */
+.navbar-toggler{color: #04ecfa; border:1px solid #04ecfa; background-color: transparent !important;}
+.navbar-toggler:focus{box-shadow: 0px 0px 10px #04ecfa;}
+
+.navbar-toggler-icon{background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(4,236,250,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");}
+
+
+#loguito{
+    width: 100px;}
+
+
+header{
+    height: 600px;
+    background-color: #ccc;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#logo{
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    top: 70px; 
+}
+
+#logo img{width: 350px; display: block; margin: auto;}
+
+
+/* Botón con Marcador */
+#containerBoton{
+    width: 100%;
+    position: absolute;
+    top: 375px;
+    left: 0;
+    z-index: 101;
+}
+#containerBoton a{text-decoration: none;}
+#botonJY{
+    width: 200px;
+    height: 40px;
+    background-color: var(--colorPrincipalUno);
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 1px 12px 20px black;
+}
+
+#botonJY p{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 40px;
+    margin: 0;
+}
+
+#botonJY:hover{box-shadow: none;}
+
+.carousel-inner, .carousel-item{
+    height: 600px;
+}
+
+.carousel-item img{
+    height: 600px;
+    object-fit: cover;
+}
+
+
+main{
+    height: auto;
+    padding: 20px;
+}
+
+#contenedorUno{margin-top: 1.9rem;}
+
+.card{
+    width: 100%;
+    height: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.card-img-top{height: 400px; object-fit: cover;}
+
+.card-body a{color: white; font-weight: bold;}
+
+.btn{
+    background-color: var(--colorPrincipalDos);
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.btn:visited, .btn:active{background-color: var(--colorPrincipalDos) !important;}
+
+.btn:hover{background-color: rgba(251, 58, 223, 1);}
+
+
+#contenedorDos{margin-top: 3.5rem;}
+
+#videoUno{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#videoUno iframe{
+    width: 100%;
+    height: 400px;
+}
+
+
+footer{
+    height: 820px;
+    margin-top: 70px;
+    padding: 50px 15px;
+    border-top: 10px solid var(--colorPrincipalUno);
+    background-color: #1c1c1c;
+    position: relative;
+}
+
+#logoFooter{width: 175px; margin: auto;}
+#logoFooter img{width: 100%;}
+
+#containerTres{
+    width: 100%;
+    height: 350px;
+    margin: 20px auto 10px auto;
+}
+
+#containerTres address{
+    width: 100%;
+    color: #fff;
+    font-size: 1.1rem;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#mapa{
+    width: 100%;
+    height: 350px;
+    border: 3px solid var(--colorPrincipalUno);
+}
+
+#copyAutor{
+    width: 100%;
+    border-top: 0.3px solid #4a4a4a;
+    padding-top: 1rem;
+    position: absolute;
+    bottom: 0;
+}
+
+#copyAutor p{
+    margin:0 auto;
+}
+
+#copyAutor p{color: #fff; text-align: center; font-family: arial; width: 400px;}
+#copyAutor a{color: rgb(255, 255, 255);}
+#copyAutor a:hover{color: var(--colorPrincipalUno);}
+
+
+/* ///////////////////////////////////////// */
+
+/* Tablet 10 pulgadas */
+@media screen and (min-width: 768px){
+    #contenedorUno .card{width: 46%;}
+    
+    #copyAutor p{width: 100%;}
+}
+
+@media screen and (min-width:992px){
+
+    
+    .navbar{
+        position: relative;
+        height: 60px;
+    }
+
+    .navbar-nav{
+        position: absolute;
+        right: 50px;
+        height: 60px;
+    }
+
+    .navbar-nav .nav-item{
+        border-bottom: none !important;
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 10px;
+    }
+    
+    .navbar-nav .nav-item:last-child{margin-bottom: 0; border-right: none;}
+    
+    
+    #loguito{margin-left: 50px;}
+
+    main{padding: 20px 100px;}
+
+    /* Cards */
+    .card{
+        margin: 0 auto 30px auto;
+        transition: 0.5s;
+    }
+
+    .card:hover{
+        transform: scale(1.1) translateY(-15px);
+        box-shadow: 0 20px 30px rgba(254, 60, 217, 0.6);
+    }
+
+    #videoUno{
+        width: 100%;
+        padding: 10px;
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    #videoUno iframe{
+        width: 100%;
+        height: 400px;
+    }
+
+    #contenedorUno{/* background-color: green; */ justify-content: space-between;}
+
+    #mapa{
+        width: 827px;
+        margin: auto;
+        display: block;
+        height: 350px;
+        border: 3px solid var(--colorPrincipalUno);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .navbar-nav{ right: 100px;}
+    #loguito{margin-left: 98px;}
+
+    header{height: 1200px;}    
+    #logo img{width: 450px; display: block; margin: auto;}
+
+    .carousel-inner, .carousel-item{
+        height: 1200px;
+    }
+    
+    .carousel-item img{
+        height: 1200px;
+        object-fit: cover;
+    }
+
+    h1{font-size: 40px;}
+    h2{font-size: 26px;}
+
+    #contenedorUno{margin-top: 2.5rem;}
+
+    #contenedorUno .card{width: 23%;}
+
+    #videoUno{margin-top: 1.5rem}
+    #videoUno iframe{height: 650px;}
+}
